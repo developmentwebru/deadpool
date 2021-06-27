@@ -1,0 +1,11 @@
+{
+  "name": "deadpool",
+  "version": "1.0.0",
+  "description": "test task",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
