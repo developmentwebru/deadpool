@@ -204,7 +204,7 @@ body {
 }
 
 .content {
-  width: 750px;
+  max-width: 750px;
   margin: 0 auto;
 }
 .content__description {
@@ -331,9 +331,8 @@ body {
 .content__trailer {
   background-color: #f5f5f5;
   position: relative;
-  width: 750px;
-  height: 422px;
-  padding-bottom: 68px;
+  max-width: 750px;
+  max-height: 422px;
 }
 .content__trailer__svg {
   z-index: 1;
@@ -341,6 +340,14 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -49%);
+}
+.content__trailer__img {
+  width: 100%;
+  height: 100%;
+}
+.content__trailer__img img {
+  width: 100%;
+  height: 100%;
 }
 .content__trailer__img::before {
   position: absolute;
@@ -427,4 +434,180 @@ body {
   margin-left: 16px;
   display: inline-block;
   color: #d7d7d7;
+}
+
+.menu {
+  display: none;
+}
+
+@media screen and (max-width: 1200px) {
+  .header-title {
+    padding-left: 20px;
+  }
+
+  .header__menu {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .content__slaider_item2 {
+    display: none;
+  }
+
+  .content__footer_item {
+    padding-right: 20px;
+  }
+
+  .content__slaider {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .content__slaider_item1_picture1 {
+    margin-left: 0px;
+  }
+
+  .content__slaider_item1_prev {
+    left: -65px;
+  }
+
+  .content__trailer {
+    padding: 0 5px;
+  }
+}
+@media screen and (max-width: 660px) {
+  .content__description_reviews_negative {
+    padding-right: 20px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .content__description_poster img {
+    display: none;
+  }
+
+  .content__description_poster p {
+    margin: 17px 20px 0px 29px;
+  }
+
+  .content__description_reviews {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .content__description_reviews_title {
+    margin-bottom: 20px;
+  }
+
+  .content__description_reviews_negative {
+    margin-left: 0px;
+  }
+
+  .content__cool_pic {
+    display: none;
+  }
+}
+@media screen and (max-width: 530px) {
+  .content__slaider_item3_pic3 {
+    display: none;
+  }
+
+  .content__slaider_item3_next {
+    right: -30px;
+    top: -15px;
+  }
+}
+@media screen and (max-width: 430px) {
+  .header-title li:nth-child(1) {
+    color: black;
+    font-size: 40px;
+    padding: 50px 0 0 20px;
+  }
+
+  .header-title li:nth-child(2) {
+    display: none;
+  }
+
+  .header-title li:nth-child(3) {
+    display: none;
+  }
+
+  .header-title li:nth-child(4) {
+    display: none;
+  }
+
+  .header__menu_logo {
+    display: none;
+  }
+
+  .header__menu_logo_title {
+    display: none;
+  }
+
+  .header__menu_list_item li:nth-child(1) a {
+    display: none;
+  }
+
+  .header__menu_list_item li:nth-child(2) {
+    display: none;
+  }
+
+  .header__menu_list_item li:nth-child(3) {
+    display: none;
+  }
+
+  .header__menu_list_item li:nth-child(4) {
+    display: none;
+  }
+
+  .header__menu {
+    position: relative;
+    width: 100%;
+    padding-right: 0px;
+    padding-top: 0px;
+    margin-top: -50px;
+  }
+
+  .header__menu_list_item li::before {
+    height: 40px;
+  }
+
+  .header-image {
+    display: none;
+  }
+
+  .content__description_poster {
+    padding-top: 130px;
+  }
+
+  .content__description_reviews_positive {
+    margin-bottom: 50px;
+  }
+
+  .content__description_reviews_neutral {
+    margin-bottom: 50px;
+  }
+
+  .content__description_reviews_negative {
+    margin-left: 30px;
+  }
+
+  .menu {
+    z-index: 3000;
+    display: block;
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    top: 58px;
+    left: 40%;
+    font-family: "BebasNeueRegular";
+  }
+}
+@media screen and (max-width: 350px) {
+  .content__slaider_item1_prev {
+    left: -40px;
+  }
+
+  .content__slaider_item3_next {
+    right: -10px;
+  }
 }
